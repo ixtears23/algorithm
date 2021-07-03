@@ -26,7 +26,7 @@ class FindACharacterTest {
     void solutionTest() {
 
         // given
-        String str = "Computercoolerc";
+        String str = "Computercooler";
         char ch = 'c';
 
         // when
