@@ -47,7 +47,7 @@ public class CaseConversion {
                 answer.append(Character.toChars(c + 32));
             }
             if (c >= 97 && c <= 122) {
-                answer.append(Character.toChars(c - 32));
+                answer.append((char) (c - 32));
             }
         }
 
