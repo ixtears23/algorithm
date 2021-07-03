@@ -5,13 +5,10 @@ public class FindACharacter {
     public int solution(String str, char ch) {
 
         str = str.toUpperCase();
-        var word = Character.toString(ch);
+        String word = Character.toString(ch);
         word = word.toUpperCase();
 
-        /*
-
-         */
-        var count = 0;
+        int count = 0;
 
         while (str.length() > 0) {
             int i = str.indexOf(word);
