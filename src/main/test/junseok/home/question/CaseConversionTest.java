@@ -40,6 +40,19 @@ class CaseConversionTest {
 
         // then
         assertThat(answer).isEqualTo(expectedAnswer);
+    }
 
+    @Test
+    void solutionTest3() {
+
+        // given
+        String input = "StuDY";
+        String expectedAnswer = "sTUdy";
+
+        // when
+        String answer = conversion.solution3(input);
+
+        // then
+        assertThat(answer).isEqualTo(expectedAnswer);
     }
 }
