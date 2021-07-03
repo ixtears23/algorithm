@@ -38,4 +38,19 @@ public class FindACharacter {
 
         return count;
     }
+
+    public int solution3(String str, char ch) {
+
+        str = str.toUpperCase();
+        ch = Character.toUpperCase(ch);
+        int count = 0;
+
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) == ch) {
+                count++;
+            }
+        }
+
+        return count;
+    }
 }
