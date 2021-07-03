@@ -47,6 +47,18 @@ class FindACharacterTest {
         assertThat(count).isEqualTo(answer);
     }
 
+    @ParameterizedTest
+    @MethodSource("stringAndChar")
+    void solution2Test(String str, char c, int answer) {
+
+        // when
+        int count = findACharacter.solution2(str, c);
+
+        // then
+        assertThat(count).isEqualTo(answer);
+    }
+
+
     static Stream<Arguments> stringAndChar() {
         return Stream.of(
                 arguments(
@@ -54,6 +66,9 @@ class FindACharacterTest {
                 ),
                 arguments(
                         "Computercooler", 'c', 2
+                ),
+                arguments(
+                        "doriDorido", 'd', 3
                 )
         );
     }
