@@ -53,4 +53,18 @@ public class FindACharacter {
 
         return count;
     }
+
+    public int solution4(String str, char ch) {
+        str = str.toUpperCase();
+        ch = Character.toUpperCase(ch);
+        int count = 0;
+
+        for (char c : str.toCharArray()) {
+            if (c == ch) {
+                count++;
+            }
+        }
+
+        return count;
+    }
 }
