@@ -69,6 +69,17 @@ class FindACharacterTest {
         assertThat(count).isEqualTo(answer);
     }
 
+    @ParameterizedTest
+    @MethodSource("stringAndChar")
+    void solution4Test(String str, char c, int answer) {
+
+        // when
+        int count = findACharacter.solution4(str, c);
+
+        // then
+        assertThat(count).isEqualTo(answer);
+    }
+
 
     static Stream<Arguments> stringAndChar() {
         return Stream.of(
