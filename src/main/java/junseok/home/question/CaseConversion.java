@@ -37,4 +37,20 @@ public class CaseConversion {
 
         return answer.toString();
     }
+
+    public String solution3(String input) {
+
+        StringBuilder answer = new StringBuilder();
+
+        for (char c : input.toCharArray()) {
+            if (c >= 65 && c <= 90) {
+                answer.append(Character.toChars(c + 32));
+            }
+            if (c >= 97 && c <= 122) {
+                answer.append(Character.toChars(c - 32));
+            }
+        }
+
+        return answer.toString();
+    }
 }
