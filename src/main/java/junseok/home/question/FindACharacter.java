@@ -22,4 +22,20 @@ public class FindACharacter {
 
         return count;
     }
+
+    public int solution2(String str, char ch) {
+
+        str = str.toUpperCase();
+        String word = Character.toString(ch);
+        word = word.toUpperCase();
+        int count = 0;
+
+        for (int i = 0; i < str.length(); i++) {
+            if (Character.toString(str.charAt(i)).equals(word)) {
+                count++;
+            }
+        }
+
+        return count;
+    }
 }
