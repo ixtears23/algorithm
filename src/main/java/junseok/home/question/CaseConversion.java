@@ -21,4 +21,20 @@ public class CaseConversion {
 
         return answer.toString();
     }
+
+    public String solution2(String input) {
+
+        StringBuilder answer = new StringBuilder();
+
+        for (char c : input.toCharArray()) {
+            if (Character.isUpperCase(c)) {
+                answer.append(Character.toLowerCase(c));
+            }
+            if (Character.isLowerCase(c)) {
+                answer.append(Character.toUpperCase(c));
+            }
+        }
+
+        return answer.toString();
+    }
 }
