@@ -57,20 +57,4 @@ class FindACharacterTest {
                 )
         );
     }
-
-
-
-    @Test
-    void noting() {
-
-        String str = "cococ";
-        char ch = 'o';
-        int i = str.indexOf(ch);
-        String substring = str.substring(i + 1);
-
-        String str2 = "";
-        int o = str2.indexOf("o");
-        System.out.println(o);
-    }
-
 }
