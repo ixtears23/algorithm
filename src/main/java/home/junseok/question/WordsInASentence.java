@@ -35,15 +35,22 @@ public class WordsInASentence {
 
     public String solution3(String input) {
 
-        String[] strArray = input.split(" ");
         String answer = "";
+        int m = Integer.MIN_VALUE;
+        int pos;
 
-        for (String str : strArray) {
-            if (str.length() > answer.length()) {
-                answer = str;
+        while ((pos = input.indexOf(' ')) != -1) {
+            String tmp = input.substring(0, pos);
+            int len = tmp.length();
+            if (len > m) {
+                m = len;
+                answer = tmp;
             }
+            input = input.substring(pos + 1);
         }
-
+        if (input.length() > m) {
+            answer = input;
+        }
         return answer;
     }
 
