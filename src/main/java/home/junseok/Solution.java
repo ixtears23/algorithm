@@ -1,4 +1,4 @@
-package junseok.home;
+package home.junseok;
 
 public class Solution {
     public int[] solution(int[] array, int[][] commands) {

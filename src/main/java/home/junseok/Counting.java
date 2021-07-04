@@ -1,4 +1,4 @@
-package junseok.home;
+package home.junseok;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

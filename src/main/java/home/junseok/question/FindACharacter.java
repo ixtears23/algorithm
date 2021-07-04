@@ -1,4 +1,4 @@
-package junseok.home.question;
+package home.junseok.question;
 
 public class FindACharacter {
 

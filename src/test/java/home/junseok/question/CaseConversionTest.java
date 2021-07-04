@@ -1,4 +1,4 @@
-package junseok.home.question;
+package home.junseok.question;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
