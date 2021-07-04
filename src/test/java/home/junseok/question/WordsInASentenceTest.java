@@ -27,7 +27,6 @@ class WordsInASentenceTest {
         assertThat(answer).isEqualTo(expectedAnswer);
     }
 
-
     @Test
     void solutionTest2() {
 
@@ -37,6 +36,20 @@ class WordsInASentenceTest {
 
         // when
         String answer = wordsInASentence.solution2(input);
+
+        // then
+        assertThat(answer).isEqualTo(expectedAnswer);
+    }
+
+    @Test
+    void solutionTest3() {
+
+        // given
+        String input = "it is time to study";
+        String expectedAnswer = "study";
+
+        // when
+        String answer = wordsInASentence.solution3(input);
 
         // then
         assertThat(answer).isEqualTo(expectedAnswer);
