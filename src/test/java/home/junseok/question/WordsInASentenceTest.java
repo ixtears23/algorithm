@@ -26,4 +26,19 @@ class WordsInASentenceTest {
         // then
         assertThat(answer).isEqualTo(expectedAnswer);
     }
+
+
+    @Test
+    void solutionTest2() {
+
+        // given
+        String input = "it is time to study";
+        String expectedAnswer = "study";
+
+        // when
+        String answer = wordsInASentence.solution2(input);
+
+        // then
+        assertThat(answer).isEqualTo(expectedAnswer);
+    }
 }
