@@ -31,6 +31,7 @@ class WordFlipTest {
             assertThat(answer[i]).isEqualTo(expectedAnswer[i]);
         }
     }
+
     @Test
     void solution2Test() {
         // given
@@ -40,6 +41,22 @@ class WordFlipTest {
 
         // when
         ArrayList<String> answer = wordFlip.solution2(n, words);
+
+        // then
+        for (int i = 0; i < n; i++) {
+            assertThat(answer.get(i)).isEqualTo(expectedAnswer[i]);
+        }
+    }
+
+    @Test
+    void solution3Test() {
+        // given
+        int n = 3;
+        String[] words = new String[] {"good", "Time", "Big"};
+        String[] expectedAnswer = new String[] {"doog", "emiT", "giB"};
+
+        // when
+        ArrayList<String> answer = wordFlip.solution3(n, words);
 
         // then
         for (int i = 0; i < n; i++) {
