@@ -36,4 +36,12 @@ public class PalindromeString {
 
         return answer;
     }
+
+    public String solution3(String input) {
+        String answer = "NO";
+        String tmp = new StringBuilder(input).reverse().toString();
+        if (input.equalsIgnoreCase(tmp)) answer = "YES";
+
+        return answer;
+    }
 }
