@@ -1,5 +1,7 @@
 package home.junseok.question;
 
+import java.util.ArrayList;
+
 public class WordFlip {
 
     public String[] solution(int n, String[] words) {
@@ -13,6 +15,17 @@ public class WordFlip {
                 flip += chars[j - 1];
             }
             answer[i] = flip;
+        }
+
+        return answer;
+    }
+
+    public ArrayList<String> solution2(int n, String[] str) {
+        ArrayList<String> answer = new ArrayList<>();
+
+        for (String x : str) {
+            String temp = new StringBuilder(x).reverse().toString();
+            answer.add(temp);
         }
 
         return answer;
