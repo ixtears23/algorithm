@@ -39,4 +39,17 @@ class PalindromeStringTest {
         // then
         assertThat(answer).isEqualTo(expectedAnswer);
     }
+
+    @Test
+    void solutionTest3() {
+        // given
+        String input = "gooG";
+        String expectedAnswer = "YES";
+
+        // when
+        String answer = palindromeString.solution3(input);
+
+        // then
+        assertThat(answer).isEqualTo(expectedAnswer);
+    }
 }
