@@ -30,4 +30,25 @@ public class WordFlip {
 
         return answer;
     }
+
+    public ArrayList<String> solution3(int n, String[] str) {
+        ArrayList<String> answer = new ArrayList<>();
+
+        for (String x : str) {
+            char[] s = x.toCharArray();
+            int lt = 0;
+            int rt = x.length() - 1;
+            while (lt < rt) {
+                char temp = s[lt];
+                s[lt] = s[rt];
+                s[rt] = temp;
+                lt++;
+                rt--;
+            }
+            String tmp = String.valueOf(s);
+            answer.add(tmp);
+        }
+
+        return answer;
+    }
 }
