@@ -28,4 +28,15 @@ public class Cipher {
 
         return answer;
     }
+
+    public String solution2(int len, String cipherText) {
+
+        String answer = "";
+        for (int i = 0; i < len; i++) {
+            answer += (char) Integer.parseInt(cipherText.substring(0, 7).replace('#', '1').replace('*', '0'), 2);
+            cipherText = cipherText.substring(7);
+        }
+        return answer;
+    }
+
 }
