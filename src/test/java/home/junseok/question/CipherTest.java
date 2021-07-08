@@ -15,7 +15,7 @@ class CipherTest {
     }
 
     @Test
-    void nothing() {
+    void solutionTest() {
         // given
         int len = 4;
         String cipherText = "#****###**#####**#####**##**";
@@ -23,6 +23,21 @@ class CipherTest {
 
         // when
         String answer = cipher.solution(len, cipherText);
+
+        // then
+        assertThat(answer).isEqualTo(expectedAnswer);
+    }
+
+
+    @Test
+    void solutionTest2() {
+        // given
+        int len = 4;
+        String cipherText = "#****###**#####**#####**##**";
+        String expectedAnswer = "COOL";
+
+        // when
+        String answer = cipher.solution2(len, cipherText);
 
         // then
         assertThat(answer).isEqualTo(expectedAnswer);
