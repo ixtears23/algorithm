@@ -15,6 +15,7 @@ public class BruteForce15649 {
     private static final int N; // 가장 큰 자연수
     private static final int M; // 수열 길이
     private static final int[] exploredSequence; // 탐색된 수열
+    private static final int[] usedNumberArray; // 사용된 숫자 목록
     private static final StringBuilder SB;
 
     public static final String SPACE;
@@ -26,6 +27,7 @@ public class BruteForce15649 {
         N = sc.nextInt();
         M = sc.nextInt();
         exploredSequence = new int[M];
+        usedNumberArray = new int[N + 1];
         SB =  new StringBuilder();
         SPACE = " ";
         NEW_LINE = "\n";
@@ -51,19 +53,14 @@ public class BruteForce15649 {
         // 모두 찾지 않으면, 계속해서 찾는다.
         // 여기서 sequenceList에 넣는다
         for (int naturalNumber = 1; naturalNumber <= N; naturalNumber++) {
-
-            boolean isUsedNumber = false;
-            for (int i = 0; i < k; i++) {
-                if (exploredSequence[i] == naturalNumber) {
-                    isUsedNumber = true;
-                    break;
-                }
+            if (usedNumberArray[naturalNumber] == 1) {
+                continue;
             }
 
-            if (!isUsedNumber) {
-                exploredSequence[k] = naturalNumber;
-                recFunc(k + 1);
-            }
+            exploredSequence[k] = naturalNumber;
+            usedNumberArray[naturalNumber] = 1;
+            recFunc(k + 1);
+            usedNumberArray[naturalNumber] = 0;
         }
 
     }
