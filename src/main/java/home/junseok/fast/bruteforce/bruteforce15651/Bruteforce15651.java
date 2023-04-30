@@ -1,4 +1,4 @@
-package home.junseok.fast.bruteforce;
+package home.junseok.fast.bruteforce.bruteforce15651;
 
 import java.util.Scanner;
 
