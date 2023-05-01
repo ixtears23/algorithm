@@ -2,6 +2,9 @@ package home.junseok.fast.bruteforce.bruteforce15652;
 
 import java.util.Scanner;
 
+/**
+ * <h2>완전 탐색</h2>
+ */
 public class BruteForce15652 {
 
     private static int n;   // 자연수

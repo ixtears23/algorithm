@@ -2,6 +2,9 @@ package home.junseok.fast.bruteforce.bruteforce15651;
 
 import java.util.Scanner;
 
+/**
+ * <h2>완전 탐색</h2>
+ */
 public class Bruteforce15651 {
 
     private static final Scanner SCANNER = new Scanner(System.in);

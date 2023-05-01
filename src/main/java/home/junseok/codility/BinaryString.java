@@ -1,5 +1,8 @@
 package home.junseok.codility;
 
+/**
+ * <h2>이진 갭</h2>
+ */
 public class BinaryString {
 
     private static final StringBuilder sb = new StringBuilder();

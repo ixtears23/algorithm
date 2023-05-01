@@ -3,8 +3,11 @@ package home.junseok.fast.bruteforce.bruteforce15649;
 
 import java.util.Scanner;
 
+
+
 /**
- * <h2>문제</h2>
+ * <h2>완전 탐색</h2>
+ * <h3>문제</h3>
  * <p>
  * 자연수 N과 M이 주어졌을 때, 아래 조건을 만족하는 길이가 M인 수열을 모두 구하는 프로그램을 작성하시오.
  * </p>
