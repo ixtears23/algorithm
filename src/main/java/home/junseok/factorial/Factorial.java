@@ -1,4 +1,4 @@
-package home.junseok;
+package home.junseok.factorial;
 
 import java.util.Scanner;
 
